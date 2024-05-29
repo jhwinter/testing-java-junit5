@@ -1,4 +1,4 @@
-[![CircleCI](https://dl.circleci.com/status-badge/img/circleci/Ln7qGzxo5A3f4ZQpoohvpT/6PFEtzFwGA3YmZeSHgWTC2/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/circleci/Ln7qGzxo5A3f4ZQpoohvpT/6PFEtzFwGA3YmZeSHgWTC2/tree/master)
+[![CircleCI](https://dl.circleci.com/status-badge/img/circleci/Ln7qGzxo5A3f4ZQpoohvpT/6PFEtzFwGA3YmZeSHgWTC2/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/circleci/Ln7qGzxo5A3f4ZQpoohvpT/6PFEtzFwGA3YmZeSHgWTC2/tree/main)
 # Introduction to JUnit 5 with Maven
 
 All source code examples in the repository are for my [Online Course - Testing Spring Beginner to Guru](https://www.udemy.com/testing-spring-boot-beginner-to-guru/?couponCode=GITHUB_REPO)
