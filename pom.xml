@@ -65,6 +65,12 @@
             <version>${junit-platform.version}</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-params</artifactId>
+            <version>${junit-platform.version}</version>
+            <scope>test</scope>
+        </dependency>
 
         <dependency>
             <groupId>org.assertj</groupId>
@@ -95,6 +101,8 @@
                     <argLine>
                         --illegal-access=permit
                     </argLine>
+                    <!--<groups>model</groups>-->
+                    <excludedGroups>controllers</excludedGroups>
                 </configuration>
             </plugin>
             <plugin>
@@ -106,8 +114,30 @@
                         --illegal-access=permit
                     </argLine>
                 </configuration>
+                <!-- needed to enable running integration tests during `mvn verify` -->
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>integration-test</goal>
+                            <goal>verify</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-site-plugin</artifactId>
+                <version>3.7.1</version>
             </plugin>
         </plugins>
     </build>
-
+    <reporting>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-report-plugin</artifactId>
+                <version>2.22.0</version>
+            </plugin>
+        </plugins>
+    </reporting>
 </project>
