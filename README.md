@@ -16,3 +16,21 @@ For questions and help:
 * Or post in the Slack Community exclusive to the course.
 
 GitHub Issues will not be addressed.
+
+
+
+## Notes
+
+### JUnit Assertion Lambdas
+
+* JUnit 5 incorporates support of lambdas in assertions
+* Grouped Assertions - all assertions run in block, all failures reported
+* Dependent Assertions - allows for block of grouped assertions
+* Expected exceptions are tested with assertThrows lambda expression
+* Timeouts are tested with assertTimeout lambda expression
+
+### Assertion Frameworks
+
+* Popular Options
+  * AssertJ (newer)
+  * Hamcrest (older)
